@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35417.141 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.Api", "ContactApp.Api\ContactApp.Api.csproj", "{014BAC76-123F-4CA9-9C5E-4F267EB1EBFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContactApp.JsonRepository", "ContactApp.JsonRepository\ContactApp.JsonRepository.csproj", "{0BCDEFED-A6F4-4556-834F-45C677EB4250}"
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "ContactApp.AngularApp", "ContactApp.AngularApp\ContactApp.AngularApp.esproj", "{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{014BAC76-123F-4CA9-9C5E-4F267EB1EBFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{014BAC76-123F-4CA9-9C5E-4F267EB1EBFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{014BAC76-123F-4CA9-9C5E-4F267EB1EBFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{014BAC76-123F-4CA9-9C5E-4F267EB1EBFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BCDEFED-A6F4-4556-834F-45C677EB4250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BCDEFED-A6F4-4556-834F-45C677EB4250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BCDEFED-A6F4-4556-834F-45C677EB4250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BCDEFED-A6F4-4556-834F-45C677EB4250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E2A977-3E58-4A78-AD9D-E7102C4C63DF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

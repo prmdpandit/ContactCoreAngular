@@ -1,0 +1,47 @@
+<div class="container">
+    <h2>{{ isEditMode ? 'Edit Contact' : 'New Contact' }}</h2>
+
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text"
+                   id="firstName"
+                   class="form-control"
+                   formControlName="firstName"
+                   placeholder="Enter first name" />
+            <div *ngIf="contactForm.get('firstName')?.invalid && contactForm.get('firstName')?.touched" class="text-danger">
+                First Name is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text"
+                   id="lastName"
+                   class="form-control"
+                   formControlName="lastName"
+                   placeholder="Enter last name" />
+            <div *ngIf="contactForm.get('lastName')?.invalid && contactForm.get('lastName')?.touched" class="text-danger">
+                Last Name is required.
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email"
+                   id="email"
+                   class="form-control"
+                   formControlName="email"
+                   placeholder="Enter email" />
+            <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+                <span *ngIf="contactForm.get('email')?.errors?.['required']">Email is required.</span>
+                <span *ngIf="contactForm.get('email')?.errors?.['email']">Please enter a valid email.</span>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">
+            {{ isEditMode ? 'Update' : 'Create' }}
+        </button>
+        <button type="button" class="btn btn-secondary" (click)="router.navigate(['/contacts'])">Cancel</button>
+    </form>
+</div>
